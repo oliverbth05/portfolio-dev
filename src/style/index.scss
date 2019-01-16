@@ -1,0 +1,77 @@
+@import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
+
+
+@import './variables.scss';
+@import './mixins.scss';
+@import './typography.scss';
+@import './helpers.scss';
+@import './layout.scss';
+@import './animations.scss';
+
+
+@import './components/nav.scss';
+@import './components/skill_card.scss';
+@import './components/portfolio_card.scss';
+@import './components/button.scss';
+
+html {
+    //The default browser font-size is 16px
+    //We want every relative unit (rem) to correspond to 10px
+    //==> Set the font-size to 62.5% of the default of 16, ===> 10px
+
+    font-size: 62.5%;
+    
+    @include respond(huge) {
+        font-size: 90%; // 14.4px
+    }
+
+    @include respond(desktop) {
+        font-size: 85%; // 12.8px
+    }
+
+    @include respond(laptop) {
+        font-size: 80%;  //12px
+    }
+
+    @include respond(tablet) {
+        font-size: 75%; //11.2px
+    }
+
+    @include respond(phone) {
+        font-size: 70%; //10px
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: $color5;
+}
+
+
+
+
+
+.border-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    @include respond(phone) {
+        display: none
+    }
+
+    div {
+        width: 1px;
+        height: 100%;
+        border-right: 1.3px solid rgb(220, 220, 220)
+    }
+}
+
+
+    
+    
+    
+

@@ -1,0 +1,50 @@
+.section-full {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.content-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-1200 {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-600 {
+    padding: 20px;
+    width: 600px;
+    margin: auto;
+}
+
+.grid-2 {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+
+    @include respond(phone) {
+        grid-template-columns: 1fr;
+        width: auto;
+    }
+
+    
+}
+
+.grid-3 {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    @include respond(phone) {
+        grid-template-columns: 1fr;
+        width: auto;
+    }
+}
+
+.image-responsive {
+    width: 100%;
+}

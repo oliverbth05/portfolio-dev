@@ -1,0 +1,26 @@
+.portfolio-card {
+    background: rgb(245, 245, 245);
+    border-radius: 2px;
+    box-shadow: $shadow;
+
+
+    img {
+        width: 100%;
+    }
+
+    a {
+        display: block;
+        margin: 10px;
+        padding: 7px 0 7px 0;
+        text-align: center;
+        
+        background: $color3;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+
+        &:hover {
+            background: $color4
+        }
+    }
+}
