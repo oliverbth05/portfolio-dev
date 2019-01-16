@@ -1,19 +1,19 @@
 .button {
-    color: white;
+    color: $lighter;
     font-size: 1.2rem;
     padding: .7rem;
-    border: 1px solid white;
+    border: 1px solid $lighter;
     text-align: center;
     border-radius: 5px;
     transition: all .2s;
     cursor: pointer;
 
     i {
-        color: white;
+        color: $lighter;
     }
 
     &:hover {
-        background: white;
+        background: $lighter;
         color: $dark-body;
 
         i {
@@ -52,4 +52,28 @@
             background: linear-gradient(to right, $orange, $pink);
         }
     }
+}
+
+.button-dark {
+    display: inline-block;
+    margin-right: .4rem;
+    padding: 1rem;
+    text-align: center;
+    transition: all .2s;
+    color: $orange;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid $orange;
+    
+    i {
+        color: $orange;
+    }
+        &:hover {
+            background: $orange;
+            color: $lighter;
+            
+            i {
+                color: $lighter;
+            }
+        }
 }

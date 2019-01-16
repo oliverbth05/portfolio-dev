@@ -1,16 +1,23 @@
 .skill-card {
         flex-grow: 1;
         flex-basis: 15rem;
+        flex-shrink: 0;
         transition: all .2s;
         border-radius: 2px;
-        box-shadow: $shadow;
-        padding: 1rem;
-        background: rgb(245, 245, 245);
+        border: 1.4px solid $light;
+        padding: 1.2rem;
+        transition: all .2s;
         min-height: 16.5rem;
-        margin: 1rem;
+        
+        margin: .6rem;
+        
         &:hover {
             transform:translateY(-2px);
-            box-shadow: 0px 3px 5px rgba(0,0,0,0.3);
+            border-color: $lighter;
+            
+            p {
+                color: $lighter;
+            }
         }
 
         i {
@@ -27,11 +34,9 @@
         }
 
         p {
-            
+            color: $light;
             line-height: 2rem;
         }
-
-    
 }
 
 .hidden {
