@@ -1,7 +1,8 @@
 .nav {
     z-index: 5;
-    background: $color3;
-    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
     height: 40px;
     width: 100%;
     display: flex;
@@ -9,11 +10,16 @@
     justify-content: center;
 
     a {
+        transition: color .2s;
         text-transform: uppercase;
         font-weight: 300;
         letter-spacing: 2px;
         padding: 20px;
         color: white;
         text-decoration: none;
+        
+        &:hover {
+            color: $orange;
+        }
     }
 }

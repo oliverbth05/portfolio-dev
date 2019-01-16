@@ -23,7 +23,7 @@ export default function Forum() {
 
 
   return (
-    <div className = 'section-full bg-dark'>
+    <div className = 'section-full bg-gradient-1'>
       <div className = 'container-1200 fadeIn p-a-2'>
       <h2 className = 'font-light text-center color-white m-b-1'>Forum</h2>
         <h4 className = 'color-white font-light text-center m-b-2'>Single-page forum/blog comprising of Vue.js front-end and Node/MongoDB backend.</h4>

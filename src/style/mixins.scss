@@ -43,3 +43,9 @@
     animation-duration: .3s;
     animation-iteration-count: 1;
 }
+
+@mixin textGradient ($color1, $color2) {
+  background: -webkit-linear-gradient(right, $color1, $color2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

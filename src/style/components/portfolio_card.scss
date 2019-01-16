@@ -1,26 +1,28 @@
 .portfolio-card {
     background: rgb(245, 245, 245);
     border-radius: 2px;
-    box-shadow: $shadow;
-
-
+    box-shadow: $shadow; 
+    flex-basis: 22rem;
+    margin: 1rem;
+    
     img {
+        border-radius: 2px 2px 0 0;
         width: 100%;
     }
 
     a {
         display: block;
-        margin: 10px;
-        padding: 7px 0 7px 0;
+        margin: 1rem;
+        padding: .7rem 0 .7rem 0;
         text-align: center;
-        
-        background: $color3;
+        transition: all .2s;
         color: white;
         text-decoration: none;
         border-radius: 5px;
+        background: $orange-light;
 
         &:hover {
-            background: $color4
+            background: $orange;
         }
     }
 }

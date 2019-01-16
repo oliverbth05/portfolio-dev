@@ -22,31 +22,31 @@ html {
     font-size: 62.5%;
     
     @include respond(huge) {
-        font-size: 90%; // 14.4px
+        font-size: 95%; // 14.4px
     }
 
     @include respond(desktop) {
-        font-size: 85%; // 12.8px
+        font-size: 90%; // 12.8px
     }
 
     @include respond(laptop) {
-        font-size: 80%;  //12px
+        font-size: 85%;  //12px
     }
 
     @include respond(tablet) {
-        font-size: 75%; //11.2px
+        font-size: 80%; //11.2px
     }
 
     @include respond(phone) {
-        font-size: 70%; //10px
+        font-size: 75%; //10px
     }
 }
 
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    color: $color5;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $dark-body;
 }
 
 

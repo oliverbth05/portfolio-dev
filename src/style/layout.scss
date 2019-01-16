@@ -15,34 +15,24 @@
     margin: auto;
 }
 
+.container-800 {
+    padding: 2rem;
+    width: 800px;
+    margin: auto;
+}
+
 .container-600 {
-    padding: 20px;
+    padding: 2rem;
     width: 600px;
     margin: auto;
 }
 
-.grid-2 {
-    display: grid;
-    grid-gap: 15px;
-    grid-template-columns: 1fr 1fr;
-
-    @include respond(phone) {
-        grid-template-columns: 1fr;
-        width: auto;
-    }
-
-    
-}
-
-.grid-3 {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    @include respond(phone) {
-        grid-template-columns: 1fr;
-        width: auto;
-    }
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 .image-responsive {

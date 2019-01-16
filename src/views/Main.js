@@ -2,10 +2,31 @@ import React from 'react'
 import streamrimg from '../assets/streamer/streamer1.PNG';
 import forumimg from '../assets/forum/forum1.PNG';
 import newsagimg from '../assets/news-aggregator/news-aggregator1.PNG';
+import home1 from '../assets/home1.jpg';
 
 import {Link} from 'react-router-dom';
 
-export default function Main() {
+class Main extends React.Component{
+  
+  state = {
+      skillAnimation: false
+  }
+  
+  componentDidMount() {
+      window.addEventListener('scroll', this.scroll.bind(this))
+  }
+  
+  scroll(e){
+      console.log(window.pageYOffset)
+    if (window.pageYOffset > 450 && window.pageYOffset< 1200) {
+        this.setState({
+            skillAnimation: true
+        })
+    }
+  }
+  
+  render() {
+      
   return (
     <div>
         <nav className = 'nav'>
@@ -14,48 +35,48 @@ export default function Main() {
             <a href = '#portfolio'>Portfolio</a>
         </nav>
 
-        <div id = 'about' className = 'section-full content-centered bg-gradient-1 '>
-            <div className = 'container-1200'>
-                    <h1 className = 'text-center color-white p-1'>Oliver Bath</h1>
-                    <h3 className = 'text-center color-white font-light p-4'>Entry-level web developer specializing in front-end development.</h3>
-                    <h4 className  = 'text-center color-white font-light p-4'><i class="fas fa-user-graduate color-white"></i> Bachelor's of Social Sciences from the University of Cape Town.</h4>
+        <div id = 'about' className = 'section-full content-centered bg-image'>
+            <div className = 'container-1200 fadeIn '>
+                    <h1 className = 'text-center color-white p-a-1'>Oliver Bath</h1>
+                    <h3 className = 'text-center color-white font-light p-a-1'>Entry-level web developer specializing in front-end development.</h3>
+                    <h4 className  = 'text-center color-white font-light p-a-1'><i class="fas fa-user-graduate color-white"></i> Bachelor's of Social Sciences from the University of Cape Town.</h4>
                     <a href = 'https://github.com/oliverbth05' target="_blank" className = 'button button-block m-t-1'><i class="fab fa-github"></i> GitHub Profile</a>
             </div>
         </div>
 
-        <div id = 'skills' className = 'section-full content-centered border-bottom'>
+        <div id = 'skills' className = 'section-full content-centered border-bottom p-b-2 bg-white '>
             <div className = 'container-600'>
 
-                <h1 className = 'text-center p-1'>Skills</h1>
-                <div className = 'grid-2'>
+                <h1 className = 'text-center p-1 text-gradient'>Skills</h1>
+                <div className = 'flex-container'>
                     
-                    <div className = 'skill-card'>
-                        <i class="fas fa-mobile-alt"></i>
-                        <h4 className = 'text-center p-4'> Responsive Design</h4>
+                    <div className = { this.state.skillAnimation ? 'skill-card spin-interval-1' : 'skill-card hidden'}>
+                        
+                        <h4 className = 'text-center text-gradient p-4'><i class="fas fa-mobile-alt"></i> Responsive Design</h4>
                         <p>Creating web-applications for all screen sizes.</p>
                     </div>
 
 
-                    <div className = 'skill-card'>
-                        <h4 className = 'text-center p-4'><i class="fas fa-palette"></i> Styling</h4>
+                    <div className = { this.state.skillAnimation ? 'skill-card spin-interval-2' : 'skill-card hidden'}>
+                        <h4 className = 'text-center text-gradient p-4'><i class="fas fa-palette"></i> Styling</h4>
                         <p>Using a combination of third-party and custom solutions to acheive practical and visually pleasing interfaces.</p>
                     </div>
 
-                    <div className = 'skill-card'>
-                        <h4 className = 'text-center p-4'><i class="fas fa-toolbox"></i> Functionality</h4>
+                    <div className = { this.state.skillAnimation ? 'skill-card spin-interval-3' : 'skill-card hidden'}>
+                        <h4 className = 'text-center text-gradient p-4'><i class="fas fa-toolbox"></i> Functionality</h4>
                         <p>Using cutting-edge frameworks such as React and Vue to enable a higher degree of functionality and interactivity.</p>
                     </div>
 
-                    <div className = 'skill-card'>
-                        <h4 className = 'text-center p-4'><i class="fas fa-server"></i> Full-Stack Development</h4>
+                    <div className = { this.state.skillAnimation ? 'skill-card spin-interval-4' : 'skill-card hidden'}>
+                        <h4 className = 'text-center text-gradient p-4'><i class="fas fa-server"></i> Full-Stack Development</h4>
                         <p>Supporting applications with REST and RPC APIs by using the Node.js server technology.</p>
                     </div>
                 </div>
 
-                <h2 className = 'text-center p-2'>Technologies</h2>
-                <div className = 'grid-3'>
-                    <div>
-                        <h3 className = 'text-center p-3'>Front-End</h3>
+                <h2 className = 'text-center p-2 text-gradient'>Technologies</h2>
+                <div className = 'flex-container'>
+                    <div class = 'm-a-1'>
+                        <h4 className = 'text-center p-3 '>Front-End</h4>
                         <ul className = 'text-center'>
                             <li className = 'p-5'>HTML</li>
                             <li className = 'p-5'>CSS</li>
@@ -69,8 +90,8 @@ export default function Main() {
 
                    
 
-                    <div>
-                        <h3 className = 'text-center p-3'>Back-End</h3>
+                    <div class = 'm-a-1'>
+                        <h4 className = 'text-center p-3'>Back-End</h4>
                         <ul className = 'text-center'>
                             <li className = 'p-5'>Node</li>
                             <li className = 'p-5'>Express</li>
@@ -79,8 +100,8 @@ export default function Main() {
                         </ul>
                     </div>
 
-                    <div>
-                        <h3 className = 'text-center p-3'>Development</h3>
+                    <div class = 'm-a-1'>
+                        <h4 className = 'text-center p-3'>Development</h4>
                         <ul className = 'text-center'>
                             <li className = 'p-5'>Git</li> 
                             <li className = 'p-5'>Webpack</li>
@@ -95,20 +116,20 @@ export default function Main() {
          
         </div>
 
-        <div id = 'portfolio' className = 'section-full content-centered bg-dark '>
-            <div className = 'container-600'>
+        <div id = 'portfolio' className = 'section-full content-centered bg-gradient-1 '>
+            <div className = 'container-800'>
 
-                <h1 className = 'text-center color-white p-1'>Portfolio</h1>
+                <h1 className = 'text-center color-white p-1 text-gradient'>Portfolio</h1>
                 <h3 className = 'text-center color-white p-3 font-light'>Personal Projects</h3>
 
-                <div className = 'grid-2'>
+                <div className = 'flex-container'>
                     <div className = 'portfolio-card'>
                         <img src = {streamrimg}></img>
                     <div>
-                    <h3 className = 'p-4'>
+                    <h3 className = 'p-4 font-light'>
                     React Streamer
                     </h3>
-                    <p className = 'p-4'>
+                    <p className = 'p-4 '>
                     A Single-page-application mimicking a modern music-streaming service front-end.  
                     
                     </p>
@@ -129,7 +150,9 @@ export default function Main() {
                     </li>
                     </ul> */}
                 </div>
-                <Link to = '/streamer'>See More</Link>
+                
+                    <Link to = '/streamer'>See More</Link>
+           
             </div>
 
             <div className = 'portfolio-card'>
@@ -137,7 +160,7 @@ export default function Main() {
                 <img src = {forumimg} />
 
                 <div>
-                <h3 className = 'p-4'>
+                <h3 className = 'p-4 font-light'>
                     Forum
                 </h3>
                 <p className = 'p-4'>
@@ -168,14 +191,18 @@ export default function Main() {
               </ul> */}
               
                 </div>
-                <Link to = '/forum'>See More</Link>
+                
+         
+                    <Link to = '/forum'>See More</Link>
+            
+                
             </div>
 
-            <div className = 'portfolio-card'>
+            <div className = 'portfolio-card '>
                 <img src = {newsagimg} />
 
                 <div>
-                    <h3 className = 'p-4'>
+                    <h3 className = 'p-4 font-light'>
                         News Aggregator
                     </h3>
                     <p className = 'p-4'>
@@ -195,7 +222,9 @@ export default function Main() {
 
                     </ul> */}      
                 </div>
-                <Link to = '/news-aggregator'>See More</Link>
+                
+                    <Link to = '/news-aggregator'>See More</Link>
+               
             </div>
         </div>
               
@@ -205,4 +234,7 @@ export default function Main() {
      
           </div>
   )
+  }
 }
+
+export default Main;
