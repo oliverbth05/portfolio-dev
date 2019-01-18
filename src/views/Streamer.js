@@ -1,24 +1,31 @@
 import React from 'react'
-import streamer1 from '../assets/streamer/streamer1.PNG';
-import streamer2 from '../assets/streamer/streamer2.PNG';
-import streamer3 from '../assets/streamer/streamer3.PNG';
+import streamer1lg from '../assets/streamer/streamer1-lg.jpg';
+import streamer2lg from '../assets/streamer/streamer2-lg.jpg';
+import streamer3lg from '../assets/streamer/streamer3-lg.jpg';
+
+import streamer1sm from '../assets/streamer/streamer1-sm.jpg';
+import streamer2sm from '../assets/streamer/streamer2-sm.jpg';
+import streamer3sm from '../assets/streamer/streamer3-sm.jpg';
+
 import ImageGallery from 'react-image-gallery';
-import {Link} from 'react-router-dom';
+import {HashLink as Link} from 'react-router-hash-link';
 
 export default function Forum() {
-
+ 
+  
+ 
   const images = [
     {
-      original: streamer1,
-      thumbnail: streamer1
+      original: streamer1lg,
+      thumbnail: streamer1sm
     },
     {
-      original: streamer2,
-      thumbnail: streamer2
+      original: streamer2lg,
+      thumbnail: streamer2sm
     },
     {
-      original: streamer3,
-      thumbnail: streamer3
+      original: streamer3lg,
+      thumbnail: streamer3sm
     }
   ]
 

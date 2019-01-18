@@ -1,31 +1,32 @@
 .section-full {
     min-height: 100vh;
     width: 100%;
-}
-
-.content-centered {
     display: flex;
     align-items: center;
+    align-content: center;
     justify-content: center;
-    
+    flex-direction: row;
 }
 
+
+
+
 .container-1200 {
+    flex-shrink: 1;
     padding: 20px;
     max-width: 1200px;
-    margin: auto;
 }
 
 .container-800 {
     padding: 2rem;
-    width: 800px;
-    margin: auto;
+    max-width: 800px;
+   
 }
 
 .container-600 {
     padding: 2rem;
-    width: 600px;
-    margin: auto;
+    max-width: 600px;
+   
 }
 
 .flex-container {

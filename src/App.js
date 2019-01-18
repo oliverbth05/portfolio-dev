@@ -14,12 +14,12 @@ class App extends Component {
       <div id = 'app'>
         <BrowserRouter>
           <Switch>
-            <ScrollHelper>
+           <ScrollHelper>
               <Route component = {Main} exact path = '/'></Route>
               <Route component = {Forum} exact path = '/forum'></Route>
               <Route component = {Streamer} exact path = '/streamer'></Route>
               <Route component = {NewsAggregator} exact path = '/news-aggregator'></Route>
-            </ScrollHelper>
+        </ScrollHelper>
           </Switch>
         </BrowserRouter>
       </div>

@@ -18,6 +18,10 @@
   @include textGradient($orange, $pink);
 }
 
+.text-gradient-ie { //IE Explorer doesn't support background clip for gradient
+  color: $lighter;
+}
+
 .bg-image {
   background-image: linear-gradient( to left,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url('../assets/home5.jpg') ;
   background-size: cover;

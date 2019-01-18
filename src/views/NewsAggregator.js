@@ -1,24 +1,30 @@
 import React from 'react'
-import news1 from '../assets/news-aggregator/news-aggregator1.PNG';
-import news2 from '../assets/news-aggregator/news-aggregator2.PNG';
-import news3 from '../assets/news-aggregator/news-aggregator3.PNG';
+
+import news1lg from '../assets/news-aggregator/news-aggregator1-lg.jpg';
+import news2lg from '../assets/news-aggregator/news-aggregator2-lg.jpg';
+import news3lg from '../assets/news-aggregator/news-aggregator3-lg.jpg';
+
+import news1sm from '../assets/news-aggregator/news-aggregator1-sm.jpg';
+import news2sm from '../assets/news-aggregator/news-aggregator2-sm.jpg';
+import news3sm from '../assets/news-aggregator/news-aggregator3-sm.jpg';
+
 import ImageGallery from 'react-image-gallery';
-import {Link} from 'react-router-dom';
+import {HashLink as Link} from 'react-router-hash-link';
 
 export default function Forum() {
 
   const images = [
     {
-      original: news1,
-      thumbnail: news1
+      original: news1lg,
+      thumbnail: news1sm
     },
     {
-      original: news2,
-      thumbnail: news2
+      original: news2lg,
+      thumbnail: news2sm
     },
     {
-      original: news3,
-      thumbnail: news3
+      original: news3lg,
+      thumbnail: news3sm
     }
   ]
 
