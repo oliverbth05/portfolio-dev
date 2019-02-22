@@ -1,5 +1,5 @@
 .portfolio-card {
-    background: $lighter;
+    background: $white;
     border-radius: 2px;
     box-shadow: $shadow; 
     flex-basis: 22rem;
@@ -19,10 +19,10 @@
         color: white;
         text-decoration: none;
         border-radius: 5px;
-        background: $orange-light;
+        background: $color2;
 
         &:hover {
-            background: $orange;
+            background: $color1;
         }
     }
 }

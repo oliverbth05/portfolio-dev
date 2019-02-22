@@ -1,63 +1,27 @@
+$shadow: 0px 1px 5px rgba(0,0,0,0.3);
+
 .text-center {
     text-align: center;
 }
 
-.border-bottom {
-    border-bottom: 1.3px solid rgb(220, 220, 220);
-}
-
-.border-top {
-  border-top: 1.3px solid $light;
-}
-
-.clip {
-  clip-path: polygon(50% 0, 100% 0, 100% 85%, 50% 100%, 0 85%, 0% 43%, 0 0);
-}
-
 .text-gradient {
-  @include textGradient($orange, $pink);
+  @include textGradient($color1, $color2);
 }
 
 .text-gradient-ie { //IE Explorer doesn't support background clip for gradient
-  color: $lighter;
+  color: $white;
 }
 
 .bg-image {
-  background-image: linear-gradient( to left,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url('../assets/home5.jpg') ;
+  background-image: linear-gradient( to bottom,rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('../assets/home6.jpeg') ;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   
 }
 
-.bg-dark {
-    background: $dark-heading
-}
-
-.bg-light {
-  background: $lighter;
-}
-
-
-
 .gradient {
-  background: linear-gradient(to left,$orange, $pink)
-}
-
-.bg-white {
-    background: white;
-}
-
-
-
-
-
-.color-light {
-  color: $light;
-}
-
-.color-lighter {
-  color: $lighter;
+  background: linear-gradient(to left,$color1, $color2)
 }
 
 .font-light {

@@ -15,11 +15,9 @@
     
     
     &:hover {
-        border-color: $orange;
+        border-color: $color1;
         height: 55px;
-        a{
-            color: $lighter;
-        }
+        color: $color1;
     }
 
     
@@ -29,11 +27,10 @@
         font-weight: 300;
         letter-spacing: 2px;
         padding: 20px;
-        color: $light;
         text-decoration: none;
-        
+        color: $white-faded;
         &:hover {
-            color: $orange;
+            color: $color1;
         }
     }
 }

@@ -9,7 +9,8 @@ import news2sm from '../assets/news-aggregator/news-aggregator2-sm.jpg';
 import news3sm from '../assets/news-aggregator/news-aggregator3-sm.jpg';
 
 import ImageGallery from 'react-image-gallery';
-import {HashLink as Link} from 'react-router-hash-link';
+
+import Nav from '../components/Nav';
 
 export default function Forum() {
 
@@ -27,13 +28,13 @@ export default function Forum() {
       thumbnail: news3sm
     }
   ]
+  
+  const links = [{to: '/#portfolio', isHash: true, text: 'Go Back'}]
 
 
   return (
     <div className = 'section-full bg-light p-t-3'>
-    <nav className = 'nav'>
-      <Link to = '/#portfolio'>Go Back</Link>
-    </nav>
+    <Nav links = {links} />
       <div className = 'container-1200 fadeIn p-a-2'>
         <h2 className = 'font-light text-center m-b-1'>News Aggregator</h2>
         <h4 className = 'font-light text-center m-b-2'>Single-page-application that consumes news headlines from the News-API backend.</h4>

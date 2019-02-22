@@ -4,20 +4,17 @@
         flex-shrink: 0;
         transition: all .2s;
         border-radius: 2px;
-        border: 1.4px solid $light;
+        box-shadow: $shadow;
         padding: 1.2rem;
         transition: all .2s;
         min-height: 16.5rem;
-        
+        border-bottom: 4px solid $grey;
         margin: .6rem;
         
         &:hover {
             transform:translateY(-2px);
-            border-color: $lighter;
+            border-color: $color1;
             
-            p {
-                color: $lighter;
-            }
         }
 
         i {
@@ -25,7 +22,7 @@
             text-align: center;
             display: block;
             padding: 1.5rem;
-            color: $pink;
+            color: $color1;
         }
 
         h3{
@@ -34,7 +31,7 @@
         }
 
         p {
-            color: $light;
+            color: $text-body;
             line-height: 2rem;
         }
 }

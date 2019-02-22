@@ -1,0 +1,29 @@
+$color1: rgb(62, 205, 255);
+$color1-faded: rgba(62, 205, 255, 0.5);
+
+$color2: rgb(88, 135, 255);
+
+$dark : rgb(16, 46, 74);
+
+
+$grey: rgb(210, 210, 210);
+
+$white: rgb(241, 243, 248);
+$white-faded: rgba(241, 243, 248, 0.7);
+
+$text-heading: rgb(29, 81, 102);
+$text-body: rgb(89, 122, 135);
+
+//Classes
+
+.color-1 {
+    color: $color1;
+}
+
+.color-white-faded {
+    color: $white-faded;
+}
+
+.color-white {
+    color: $white;
+}

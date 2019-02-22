@@ -1,5 +1,6 @@
 h1, h2, h3, h4 {
     font-family: 'Sarabun', serif;
+    color: $text-heading;
 }
 
 h1 {
@@ -15,12 +16,13 @@ h3 {
 }
 
 h4 {
-    font-size: 1.125rem
+    font-size: 1.25rem
 }
 
 p, li, a {
     font-size: 1.1rem;
     white-space: pre-wrap;
+    color: $text-body;
 }
 
 a {

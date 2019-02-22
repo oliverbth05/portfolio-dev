@@ -1,7 +1,6 @@
 @import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 
-
-@import './variables.scss';
+@import './colors.scss';
 @import './mixins.scss';
 @import './typography.scss';
 @import './helpers.scss';
@@ -46,11 +45,12 @@ html {
     padding: 0;
     margin: 0;
     font-family: 'PT Sans', sans-serif;
-    color: $dark-body;
+    color: $text-body;
 }
 
-
-
+body {
+    background: $white;
+}
 
 
 .border-right {

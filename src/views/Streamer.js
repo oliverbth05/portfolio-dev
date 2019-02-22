@@ -8,7 +8,7 @@ import streamer2sm from '../assets/streamer/streamer2-sm.jpg';
 import streamer3sm from '../assets/streamer/streamer3-sm.jpg';
 
 import ImageGallery from 'react-image-gallery';
-import {HashLink as Link} from 'react-router-hash-link';
+import Nav from '../components/Nav';
 
 export default function Forum() {
  
@@ -28,13 +28,13 @@ export default function Forum() {
       thumbnail: streamer3sm
     }
   ]
+  
+  const links = [{to: '/#portfolio', isHash: true, text: 'Go Back'}]
 
 
   return (
     <div className = 'section-full bg-light p-t-3'>
-      <nav className = 'nav'>
-        <Link to = '/#portfolio'>Go Back</Link>
-      </nav>
+      <Nav links = {links} />
       <div className = 'container-1200 fadeIn p-a-2'>
       <h2 className = 'font-light text-center m-b-1'>Streamer</h2>
       <h4 className = ' font-light text-center m-b-2'>A Single-page-application mimicking a modern music-streaming service front-end.</h4>
